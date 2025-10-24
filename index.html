@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafael Rezende • Portfolio</title>
+  <meta name="description" content="Portfolio of Rafael Rezende — Data Analyst and Web Developer." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">Rafael Rezende</a>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Data Analyst & Web Developer</h1>
+        <p>I build clean, data-driven solutions and user-friendly web experiences. Focus on Python, SQL, Power BI, HTML, CSS, and JavaScript.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/ragrezende" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/ragrezende" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="lang-note">EN · ES planned</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="blob"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Highlighted Projects</h2>
+      <div class="grid cards">
+        <!-- Project 1 -->
+        <article class="card">
+          <h3>Global Sales Analysis</h3>
+          <p>Exploratory data analysis with Python and Pandas. KPIs, trends, and regional breakdowns.</p>
+          <ul class="tags">
+            <li>Python</li><li>Pandas</li><li>EDA</li>
+          </ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/ragrezende/data-analysis-projects" target="_blank" rel="noopener">Code</a>
+            <a class="btn small ghost" href="#dashboards">Dashboard</a>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="card">
+          <h3>Web Basics</h3>
+          <p>Responsive pages and mini apps to strengthen HTML, CSS, and JavaScript fundamentals.</p>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/ragrezende/web-basics" target="_blank" rel="noopener">Code</a>
+            <a class="btn small ghost" href="https://ragrezende.github.io/web-basics" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="card">
+          <h3>Python Scripts</h3>
+          <p>Automation utilities for productivity: file organizer, password generator, basic CLI tools.</p>
+          <ul class="tags">
+            <li>Python</li><li>CLI</li><li>Automation</li>
+          </ul>
+          <div class="actions">
+            <a class="btn small" href="https://github.com/ragrezende/python-scripts" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboards" class="container section">
+      <h2>Dashboards</h2>
+      <p>Interactive analytics published on Tableau Public and Power BI.</p>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Sales 2024 Report</h3>
+          <p>KPIs, trends, and region filters for business decisions.</p>
+          <ul class="tags"><li>Power BI</li><li>DAX</li></ul>
+          <div class="actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+            <a class="btn small ghost" href="https://github.com/ragrezende/dashboard-projects" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>COVID Insights</h3>
+          <p>Global metrics and vaccination progress with interactive views.</p>
+          <ul class="tags"><li>Tableau</li><li>Analytics</li></ul>
+          <div class="actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+            <a class="btn small ghost" href="https://github.com/ragrezende/dashboard-projects" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>I am transitioning from law to technology. I combine structured problem solving with creativity to deliver clear, actionable results. I am building an international portfolio focused on data analysis and modern web development.</p>
+      <ul class="about-list">
+        <li>Python, SQL, Power BI, Tableau</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git, GitHub, CI basics</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Let us connect for collaboration or opportunities.</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+          <p class="form-note">This is a static form. Email API integration planned.</p>
+        </form>
+        <div class="contact-links">
+          <a class="contact-card" href="mailto:rafaelrezende.dev@gmail.com">📧 rafaelrezende.dev@gmail.com</a>
+          <a class="contact-card" href="https://www.linkedin.com/in/ragrezende" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="contact-card" href="https://github.com/ragrezende" target="_blank" rel="noopener">🐙 GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Rafael Rezende. All rights reserved.</small>
+      <small>English • Español planned</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
