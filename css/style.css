@@ -125,3 +125,6 @@ body.light .site-footer { border-top-color: rgba(0,0,0,0.08); }
 
 /* Um único projeto: cartão com largura de leitura, não uma coluna estreita */
 .grid.cards.unico { grid-template-columns: minmax(0, 680px); }
+
+/* Legenda sob o título da seção de projetos */
+.legenda { color: var(--muted); margin: 0 0 18px; max-width: 680px; }
