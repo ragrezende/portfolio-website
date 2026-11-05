@@ -110,3 +110,21 @@ body.light {
   --accent: #0c9;
   --card: #ffffff;
 }
+
+/* Tema claro: os valores acima foram escritos para o tema escuro (cabeçalho escuro, bordas brancas),
+   que no tema claro ficavam ilegíveis ou invisíveis. */
+body.light .site-header { background: rgba(255,255,255,0.88); border-bottom-color: rgba(0,0,0,0.08); }
+body.light .menu button,
+body.light .btn,
+body.light .tags li { border-color: rgba(0,0,0,0.18); }
+body.light .btn.primary { border-color: var(--brand); }
+body.light .card,
+body.light .contact-card { border-color: rgba(0,0,0,0.12); }
+body.light .contact-card:hover { border-color: rgba(0,0,0,0.3); }
+body.light .site-footer { border-top-color: rgba(0,0,0,0.08); }
+
+/* Um único projeto: cartão com largura de leitura, não uma coluna estreita */
+.grid.cards.unico { grid-template-columns: minmax(0, 680px); }
+
+/* Legenda sob o título da seção de projetos */
+.legenda { color: var(--muted); margin: 0 0 18px; max-width: 680px; }
