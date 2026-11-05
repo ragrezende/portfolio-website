@@ -1,30 +1,29 @@
-// Year in footer
+// Ano no rodapé
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Theme toggle with localStorage
+// Alternância de tema, lembrada no navegador
 const toggle = document.getElementById('themeToggle');
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') document.body.classList.add('light');
+try {
+  if (localStorage.getItem('theme') === 'light') document.body.classList.add('light');
+} catch {
+  // armazenamento indisponível (por exemplo, navegação privada): fica no tema padrão
+}
 
 toggle.addEventListener('click', () => {
   document.body.classList.toggle('light');
-  const mode = document.body.classList.contains('light') ? 'light' : 'dark';
-  localStorage.setItem('theme', mode);
+  try {
+    localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+  } catch {
+    // sem armazenamento: a escolha vale só nesta visita
+  }
 });
 
-// Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (!target) return;
+// Rolagem suave para os links internos
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const alvo = document.querySelector(a.getAttribute('href'));
+    if (!alvo) return;
     e.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    alvo.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
-});
-
-// Simple placeholder for contact form
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  alert('Thanks for reaching out! Email integration is planned.');
-  e.target.reset();
 });

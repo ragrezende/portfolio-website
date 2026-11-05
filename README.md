@@ -1,60 +1,27 @@
-# 💼 Portfolio Website
+# Site de Rafael Rezende
 
-This is my personal portfolio website, built with **HTML**, **CSS**, and **JavaScript**, to showcase my professional journey and projects as a **Data Analyst** and **Web Developer**.
+Site estático (HTML, CSS e JavaScript, sem build) com o projeto principal e os contatos de Rafael Rezende, advogado que desenvolve ferramentas para a prática jurídica.
 
----
+Publicado em https://ragrezende.github.io/portfolio-website/
 
-## 🧩 Overview
-The website serves as my digital portfolio and includes:
-- A landing page with a brief professional introduction  
-- A section to highlight projects in Data Analysis, Dashboards, and Web Development  
-- Integrated links to my **GitHub**, **LinkedIn**, and **Tableau/Power BI** dashboards  
-- A contact form for professional connections and collaborations  
+## O que mostra
 
----
+- **Doc Fracionado:** ferramenta que divide PDFs para o peticionamento eletrônico, direto no navegador ([ferramenta](https://ragrezende.github.io/doc-fracionado/), [código](https://github.com/ragrezende/doc-fracionado)).
+- Sobre, com o jeito de trabalhar (desenvolvimento assistido por IA, com revisão e testes) e o compromisso de não publicar dados de clientes.
+- Contato.
 
-## 🚀 Tech Stack
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+## Regra do site
 
----
+Só entra aqui o que existe e funciona. Projeto sem código público, sem demonstração ou sem estado real de implementação não aparece. Sem formulário de contato que não envie nada.
 
-## 🌎 Deployment
-The portfolio will be hosted via **GitHub Pages**.
+## Estrutura
 
-Once deployed, it will be accessible at:  
-🔗 **[https://ragrezende.github.io/portfolio-website](https://ragrezende.github.io/portfolio-website)**
+```
+index.html      página única
+css/style.css   estilos, com tema escuro e claro
+js/main.js      ano do rodapé, alternância de tema, rolagem suave
+```
 
----
+## Como atualizar
 
-## 🗂️ Folder Structure
-portfolio-website/
-│
-├── index.html # main landing page
-├── /assets # images, icons, and fonts
-├── /css # stylesheets
-├── /js # scripts
-└── /pages # additional sections (optional)
-
-
----
-
-## ✨ Planned Features
-- 🌐 Multi-language support (**EN/ES**)  
-- 📧 Contact form integration with Email API  
-- 🌙 Light/Dark mode toggle  
-- 💻 Interactive project cards with live previews  
-
----
-
-## 📬 Contact
-If you’d like to collaborate or just connect, feel free to reach out:
-
-📧 **rafaelrezende.dev@gmail.com**  
-🔗 [LinkedIn](https://linkedin.com/in/ragrezende)  
-🐙 [GitHub](https://github.com/ragrezende)
-
----
-
-> Designed and developed by **Rafael Rezende** — blending creativity, logic, and purpose.
+Edite os arquivos e faça o commit no `main`: o GitHub Pages publica sozinho. Para ver antes, abra o `index.html` no navegador.
